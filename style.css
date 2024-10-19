@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Aligns the name to the left and list to the right */
+    align-items: center; /* Centers items vertically */
+    padding: 20px; /* Adds padding around the header */
+    background-color: #f4f4f4; /* Example background color */
+}
+
+.name {
+    flex: 1; /* Takes up space on the left */
+    text-align: left; /* Aligns text to the left */
+}
+
+.list {
+    flex: 2; /* Takes up more space on the right */
+    text-align: right; /* Aligns text to the right */
+    list-style-type: none; /* Removes default list styling */
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+    display: flex; /* Displays list items in a row */
+    justify-content: flex-end; /* Ensures items in list are aligned to the right */
+}
+
+.list li {
+    margin-left: 20px; /* Adds space between list items */
+}
