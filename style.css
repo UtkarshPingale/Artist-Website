@@ -26,6 +26,11 @@ body {
     gap: 20px;
     margin: 0;
     padding: 0;
+    margin-left: auto; /*This pushes the list to the right */
+}
+
+#menu-icon{
+    margin-left: 25px;
 }
 
 .toggle-menu {
