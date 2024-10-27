@@ -353,9 +353,9 @@ section {
 }
 
 #logo img {
-    max-height: 22px;
+    max-height: 50px;
     vertical-align: middle;
-    margin-right: 15px;
+    /* margin-right: 0px; */
 }
 
 #navigation-logo {
@@ -672,7 +672,9 @@ nav#nav-mobile a:hover {
 .social-icons a {
     display: inline-block;
     width: 32px;
-    text-align: center;
+    /* text-align:center; */
+    transform: translate(-70%, -30%);
+    font-size: 25px;
 }
 
 .social-icons a:hover {
