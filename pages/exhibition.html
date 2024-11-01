@@ -62,8 +62,19 @@
                         <div class="tab" onclick="showTab('past')">Past Exhibitions</div>
                     </div>
 
-                    <div id="nav-trigger"><span></span></div>
-                    <nav id="nav-mobile"></nav>
+                    <!-- <div id="nav-trigger"><span></span></div>
+                    <nav id="nav-mobile"></nav> -->
+
+                    <div id="nav-trigger" onclick="toggleNav()"><span></span></div>
+                    <nav id="nav-mobile">
+                        <ul>
+                            <li><div class="tab active" onclick="showTab('future')">Future Exhibitions</div></li>
+                            <li><div class="tab" onclick="showTab('current')">Current Exhibitions</div></li>
+                            <li><div class="tab" onclick="showTab('past')">Past Exhibitions</div></li>
+                            <li><a href="/index.html">Back</a></li>
+                        </ul>
+                    </nav>
+
                 </div>
             </div>
         </div><!--End of Header-->
@@ -97,6 +108,11 @@
           document.querySelector(`.tab[onclick="showTab('${tabId}')"]`).classList.add('active');
           document.getElementById(tabId).classList.add('active');
         }
+
+        function toggleNav() {
+        document.getElementById("nav-mobile").classList.toggle("show");
+        }
+
       </script>
 <!-- Include JavaScript resources -->
 <script src="/js/jquery.1.8.3.min.js"></script>
@@ -110,7 +126,7 @@
 <!-- <script src="js/jquery.waypoints.min.js"></script> -->
 <!-- <script src="js/images-loaded.min.js"></script> -->
 <!-- <script src="js/lightbox.min.js"></script> -->
-<script src="/js/site.js"></script>
-<!-- <script src="js/imagescrolling.js"></script> -->
+<script src="/js/site.js"></script> 
+<script src="js/imagescrolling.js"></script>
 </body>
 </html>

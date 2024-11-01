@@ -136,7 +136,7 @@ figure {
 
 /* --------- 1.1 Input Elements ---------- */
 
-input, textarea {
+/* input, textarea {
     border: 1px solid #e1e1e1;
     padding: 10px;
     -webkit-transition: all .3s linear;
@@ -173,20 +173,20 @@ input:focus, textarea:focus {
 
 *:focus {
     outline: none;
-}
+} */
 
 /*------------------------------------------------------------------------------------------*/
 /* 2. Layout Elements */
 /*------------------------------------------------------------------------------------------*/
 
-section {
+/* section {
     clear: both;
     overflow: hidden;
-}
+} */
 
 /* Rows and Columns */
 
-.row {
+/* .row {
     max-width: 1245px;
     margin: 0 auto;
     padding: 75px 0;
@@ -207,7 +207,7 @@ section {
 
 .big-padding-bottom {
     padding-bottom: 85px !important;
-}
+} */
 
 /* Targets all elements */
 
@@ -310,7 +310,7 @@ section {
 }
 
 .fa{
-    transform: translate(-3000%, 0%);
+    transform: translate(-2600%, 0%);
 }
 
 #header .row {
@@ -329,117 +329,6 @@ section {
     display: inline-block;
     list-style: none;
     margin: 0;
-}
-
-/* --------- 2.2 Logo ---------- */
-
-#logo {
-    float: left;
-    height: 71px;
-    line-height: 66px;
-    margin-right: 15px;
-}
-
-#logo h1, #logo h2 {
-    display: inline-block;
-}
-
-#banner #logo h1 {
-    font-size: 28px;
-    margin-right: 10px;
-    font-weight: 900;
-    padding: 0;
-}
-
-#logo h2 {
-    font-size: 18px;
-    padding: 0;
-}
-
-#logo img {
-    max-height: 50px;
-    vertical-align: middle;
-    /* margin-right: 0px; */
-}
-
-#navigation-logo {
-    display: none;
-}
-
-.nav-solid #logo #banner-logo {
-    display: none;
-}
-
-.nav-solid #logo #navigation-logo {
-    display: inline-block;
-}
-
-
-/* --------- 2.4 Navigation ---------- */
-
-#header {
-    font-size: 13px;
-}
-
-#header aside {
-    float: right;
-}
-
-#header nav ul {
-    text-transform: uppercase;
-
-}
-
-#header nav a {
-    height: 71px;
-    line-height: 71px;
-    display: block;
-    padding: 0 10px;
-}
-
-#header nav a:hover {
-    opacity: 0.6;
-}
-
-/*Navigation Solid*/
-
-#header.nav-solid [class*='col-'] {
-    padding: 0 20px;
-}
-
-#header.nav-solid {
-    background: #fff;
-    box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.2);
-    position: fixed !important;
-    left:0;
-}
-
-#header.nav-solid nav a {
-    border-bottom: 3px solid;
-    border-color: #fff;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-#header.nav-solid nav a:hover {
-    opacity: 1;
-}
-
-/* Social Elements when Solid*/
-
-#header.nav-solid .social-icons a {
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    opacity: 0.5;
-}
-
-#header.nav-solid .social-icons a:hover {
-    opacity: 1;
-    color: #e4473c;
 }
 
 /* Responsive Nav Styling */
@@ -559,62 +448,6 @@ nav#nav-mobile a:hover {
     opacity: 1;
 }
 
-/* --------- 2.5 Social Elements ---------- */
-
-#header .col-4 {
-    text-align: right;
-}
-
-.social-icons {
-    display: inline-block;
-    list-style: none;
-}
-
-.social-icons a {
-    display: inline-block;
-    width: 32px;
-    /* text-align:center; */
-    transform: translate(-70%, -30%);
-    font-size: 25px;
-}
-
-.social-icons a:hover {
-    opacity: 0.7;
-}
-
-.social-icons span {
-    display: none;
-}
-
-#header .social-icons {
-    margin-top: 27px;
-}
-
-/* --------- 2.6 Images ---------- */
-
-/*Alignment*/
-
-img {
-    vertical-align: top;
-}
-
-.image-center {
-    display: block;
-    margin: 0 auto;
-}
-
-a img {
-    border: none;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    /* -webkit-backface-visibility: hidden; */
-}
-
-a img:hover {
-    opacity: 0.7;
-}
 
 /*------------------------------------------------------------------------------------------*/
 /* 3. Fonts */
@@ -1549,4 +1382,62 @@ h6 {
     align-content: center;
     margin-top: 60px;
     background-color: #e9ecef;
+}
+
+/* Default styles for nav-trigger button */
+#nav-trigger {
+    display: none; /* Initially hidden */
+}
+
+/* Mobile view styles */
+@media screen and (max-width: 760px) {
+    /* Show the nav-trigger button */
+    #nav-trigger {
+        display: inline-block; /* Show nav-trigger button */
+    }
+
+    /* Display the mobile nav menu */
+    nav#nav-mobile {
+        display: none; /* Hide by default, will show when toggled */
+    }
+
+    nav#nav-mobile.show {
+        display: block; /* Show the nav menu when toggled */
+    }
+
+    nav#nav-mobile ul {
+        display: block; /* Display the list in the nav menu */
+        padding: 0; /* Optional: Remove default padding */
+        margin: 0; /* Optional: Remove default margin */
+        list-style-type: none; /* Remove list bullets */
+    }
+
+    /* Hide the desktop navigation tabs */
+    .tab-container {
+        display: none; /* Hide desktop tabs on mobile view */
+    }
+}
+
+/* Ensure the nav-menu is hidden on larger screens */
+nav#nav-mobile {
+    display: none; /* Hide the nav menu on larger screens */
+}
+
+/* Hover effects for tabs */
+.tab:hover {
+    background-color: #f0f0f0; /* Change to any preferred color */
+    cursor: pointer;
+}
+
+/* Default styles for nav-menu */
+.nav-menu {
+    display: none; /* Initially hidden */
+    position: absolute; /* Positioning for dropdown */
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000; /* Make sure it's above other content */
+}
+
+.nav-menu.show {
+    display: block; /* Show the menu when class is added */
 }
