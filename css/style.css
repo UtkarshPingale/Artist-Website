@@ -307,6 +307,7 @@ section {
     z-index: 9999;
     width: 100%;
     position: absolute !important;
+    margin-top: -5px;
 }
 
 #header .row {
