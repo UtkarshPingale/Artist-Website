@@ -3769,3 +3769,121 @@ blockquote {
         max-width: 100%;
     }
 }
+
+/* footer */
+footer{
+    padding-top: 20px;
+}
+.tc{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-top: #000 solid 1px;
+    border-left: #000 solid 1px;
+    border-right: #000 solid 1px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: #000 solid 1px;
+}
+
+.contact{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-left: #000 solid 1px;
+    border-right: #000 solid 1px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-bottom:#000 solid 1px;
+    border-left: #000 solid 1px;
+    border-right: #000 solid 1px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: #000 solid 1px;
+}
+
+.tc, .contact, .copyright{
+    background-color: #d2cfcf;
+}
+
+#footer_list ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Makes items align in a row */
+    gap: 50px; /* Optional: Adds space between items */
+}
+
+#footer_list li {
+    display: inline; /* Ensures the items remain in a single line */
+}
+
+#footer_list a {
+    text-decoration: none; /* Removes underline from links */
+    color: #000; /* Sets the color of the links */
+    padding: 5px 10px; /* Optional: Adds padding around links */
+}
+
+#footer_list a:hover {
+    opacity: 0.6;
+}
+
+.icon-image-container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Creates two columns */
+    gap: 20px;
+    align-items: center;
+}
+
+#footer_icon ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 20px;
+    justify-items: center;
+}
+
+.patron-logo {
+    width: 120px; /* Adjust width as needed */
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    /* mix-blend-mode: color-burn; */
+}
+
+
+#footer_icon li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer_icon a {
+    color: #000;
+    text-decoration: none;
+}
+
+#footer_icon a:hover {
+    opacity: 0.6;
+}
+
+.image-container {
+    display: block;
+    flex-direction: column; /* Stacks images vertically */
+    gap: 10px;
+}
+
+
+/* .icon-image-container{
+    padding: 50px;
+} */
+
+.side-image {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    border-radius: 5px; /* Optional styling for rounded corners */
+}
