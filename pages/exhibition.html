@@ -1,33 +1,16 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-
-    <!--Page Title-->
     <title>Impressionist</title>
-
-    <!--Meta Keywords and Description-->
-    <meta name="keywords" content="">
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <!--Favicon-->
     <link rel="shortcut icon" href="/images/site-logo.svg" title="Favicon"/>
-
-    <!-- Main CSS Files -->
     <link rel="stylesheet" href="/css/exhibition_style.css">
-
-    <!-- Namari Color CSS -->
     <link rel="stylesheet" href="/css/artist-color.css">
-
-    <!--Icon Fonts - Font Awesome Icons-->
     <link rel="stylesheet" href="/css/font-awesome.min.css">
-
-    <!-- Animate CSS-->
     <link href="/css/animate.css" rel="stylesheet" type="text/css">
-
-    <!--Google Webfonts-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
 
@@ -42,10 +25,10 @@
 <!--End of Preloader-->
 
 <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
-    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
-    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
-    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
-    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
+    <div class="top-border wow fadeInDown animated"></div>
+    <div class="right-border wow fadeInRight animated"></div>
+    <div class="bottom-border wow fadeInUp animated"></div>
+    <div class="left-border wow fadeInLeft animated"></div>
 </div>
 
 <div id="wrapper">
@@ -55,33 +38,44 @@
             <div class="row clearfix">
                 <div class="col-1">
 
-                    <div class="tab-container">
-                        <a href="/index.html"><i class="fa fa-angle-left fa-3x" aria-hidden="true"></i></a>
-                        <div class="tab active" onclick="showTab('future')">Future Exhibitions</div>
-                        <div class="tab" onclick="showTab('current')">Current Exhibitions</div>
-                        <div class="tab" onclick="showTab('past')">Past Exhibitions</div>
-                    </div>
+                    <aside>
 
-                    <!-- <div id="nav-trigger"><span></span></div>
-                    <nav id="nav-mobile"></nav> -->
+                        <!--Social Icons in Header-->
+                        <ul class="social-icons">
+                            <li>
+                                <a class="login-button" href="/pages/login.html">
+                                    <i class="fa fa-sign-in"></i><span>Login</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--End of Social Icons in Header-->
 
-                    <div id="nav-trigger" onclick="toggleNav()"><span></span></div>
-                    <nav id="nav-mobile">
+                    </aside>
+
+                    <nav id="main-nav">
                         <ul>
-                            <li><div class="tab active" onclick="showTab('future')">Future Exhibitions</div></li>
-                            <li><div class="tab" onclick="showTab('current')">Current Exhibitions</div></li>
-                            <li><div class="tab" onclick="showTab('past')">Past Exhibitions</div></li>
-                            <li><a href="/index.html">Back</a></li>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="#studio">Studio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#about">About Me</a></li>
                         </ul>
                     </nav>
-
                 </div>
             </div>
-        </div><!--End of Header-->
-        </div><!--End of Row-->
+        </div>
     </header>
 
     <div class="exh">
+        <li>
+            <ul id="exhibition-submenu" class="submenu">
+                <li><a href="javascript:void(0);" onclick="showTab('future')">Future Exhibitions</a></li>
+                <li><a href="javascript:void(0);" onclick="showTab('current')">Current Exhibitions</a></li>
+                <li><a href="javascript:void(0);" onclick="showTab('past')">Past Exhibitions</a></li>
+            </ul>
+        </li>
+    </div>
+
+    <div class="art_piece">
         <div id="future" class="tab-content active">
             <h2>Future Exhibitions</h2>
             <p>Details of upcoming exhibitions...</p>
@@ -100,33 +94,20 @@
 
     <script>
         function showTab(tabId) {
-          // Remove active class from all tabs and contents
-          document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-          document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-          
-          // Add active class to selected tab and content
-          document.querySelector(`.tab[onclick="showTab('${tabId}')"]`).classList.add('active');
-          document.getElementById(tabId).classList.add('active');
+            // Hide all tab content and remove the 'active' class
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            document.querySelectorAll('.submenu a').forEach(link => link.classList.remove('active'));
+            
+            // Show the selected tab content
+            document.getElementById(tabId).classList.add('active');
+    
+            // Highlight the active link
+            document.querySelector(`.submenu a[onclick="showTab('${tabId}')"]`).classList.add('active');
         }
+    </script>
 
-        function toggleNav() {
-        document.getElementById("nav-mobile").classList.toggle("show");
-        }
-
-      </script>
-<!-- Include JavaScript resources -->
-<script src="/js/jquery.1.8.3.min.js"></script>
-<!-- <script src="js/wow.min.js"></script> -->
-<!-- <script src="js/featherlight.min.js"></script> -->
-<!-- <script src="js/featherlight.gallery.min.js"></script> -->
-<!-- <script src="js/jquery.enllax.min.js"></script> -->
-<!-- <script src="js/jquery.scrollUp.min.js"></script> -->
-<!-- <script src="js/jquery.easing.min.js"></script> -->
-<!-- <script src="js/jquery.stickyNavbar.min.js"></script> -->
-<!-- <script src="js/jquery.waypoints.min.js"></script> -->
-<!-- <script src="js/images-loaded.min.js"></script> -->
-<!-- <script src="js/lightbox.min.js"></script> -->
-<script src="/js/site.js"></script> 
-<script src="js/imagescrolling.js"></script>
+    <script src="/js/jquery.1.8.3.min.js"></script>
+    <script src="/js/site.js"></script> 
+    <script src="js/imagescrolling.js"></script>
 </body>
 </html>
