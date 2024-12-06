@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <title>Impressionist</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
     <link rel="shortcut icon" href="/images/site-logo.svg" title="Favicon"/>
-    <link rel="stylesheet" href="/css/exhibition_style.css">
+    
+    <link rel="stylesheet" href="/css/footer_style.css">
+    
     <link rel="stylesheet" href="/css/artist-color.css">
+    
     <link rel="stylesheet" href="/css/font-awesome.min.css">
+    
     <link href="/css/animate.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
+    
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
 </head>
 <body>
 
@@ -22,7 +30,7 @@
         <div></div>
     </div>
 </div>
-<!--End of Preloader-->
+<!-- End of Preloader -->
 
 <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
     <div class="top-border wow fadeInDown animated"></div>
@@ -39,8 +47,6 @@
                 <div class="col-1">
 
                     <aside>
-
-                        <!--Social Icons in Header-->
                         <ul class="social-icons">
                             <li>
                                 <a class="login-button" href="/pages/login.html">
@@ -48,20 +54,19 @@
                                 </a>
                             </li>
                         </ul>
-                        <!--End of Social Icons in Header-->
 
                     </aside>
 
                     <nav id="main-nav">
                         <ul>
                             <li><a href="/index.html">Home</a></li>
+                            <li><a href="/pages/exhibition.html">Exhibition</a></li>
                             <li><a href="#contact">Gallery</a></li>
                             <li><a href="#about">Awards</a></li>
                             <li><a href="#about">Patron</a></li>
                             <li><a href="#about">Press & Media</a></li>
                             <li><a href="#about">Testimonials</a></li>
                             <li><a href="#about">About Me</a></li>
-                            <li><a href="/pages/studio.html">Studio</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -69,31 +74,9 @@
         </div>
     </header>
 
-    <div class="exh">
-        <li>
-            <ul id="exhibition-submenu" class="submenu">
-                <li><a href="javascript:void(0);" onclick="showTab('future')">Future Exhibitions</a></li>
-                <li><a href="javascript:void(0);" onclick="showTab('current')">Current Exhibitions</a></li>
-                <li><a href="javascript:void(0);" onclick="showTab('past')">Past Exhibitions</a></li>
-            </ul>
-        </li>
-    </div>
-
-    <div class="art_piece">
-        <div id="future" class="tab-content active">
-            <h2>Future Exhibitions</h2>
-            <p>Details of upcoming exhibitions...</p>
-        </div>
-        
-        <div id="current" class="tab-content">
-            <h2>Current Exhibitions</h2>
-            <p>Details of exhibitions currently open...</p>
-        </div>
-        
-        <div id="past" class="tab-content">
-            <h2>Past Exhibitions</h2>
-            <p>Details of past exhibitions...</p>
-        </div>
+    <div class="titleheader">
+        <h1>&ensp;Disclaimer&ensp;</h1>
+        <!-- <div class="contain"></div> -->
     </div>
 
     <footer>
@@ -141,23 +124,9 @@
             Copyright © Impressionist - 2006
         </div>
     </footer>
-
-    <script>
-        function showTab(tabId) {
-            // Hide all tab content and remove the 'active' class
-            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
-            document.querySelectorAll('.submenu a').forEach(link => link.classList.remove('active'));
-            
-            // Show the selected tab content
-            document.getElementById(tabId).classList.add('active');
-    
-            // Highlight the active link
-            document.querySelector(`.submenu a[onclick="showTab('${tabId}')"]`).classList.add('active');
-        }
-    </script>
-
+</div>
     <script src="/js/jquery.1.8.3.min.js"></script>
     <script src="/js/site.js"></script> 
-    <script src="js/imagescrolling.js"></script>
+    <script src="/js/imagescrolling.js"></script>
 </body>
 </html>
