@@ -1,120 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Impressionist</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-    <link rel="shortcut icon" href="/images/site-logo.svg" title="Favicon"/>
-    <link rel="stylesheet" href="/css/studio_style.css">
-    <link rel="stylesheet" href="/css/artist-color.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link href="/css/animate.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+import React from 'react';
+import './template.css';
 
-</head>
-<body>
-
-<!-- Preloader -->
-<div id="preloader">
-    <div id="status" class="la-ball-triangle-path">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</div>
-<!-- End of Preloader -->
-
-<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
-    <div class="top-border wow fadeInDown animated"></div>
-    <div class="right-border wow fadeInRight animated"></div>
-    <div class="bottom-border wow fadeInUp animated"></div>
-    <div class="left-border wow fadeInLeft animated"></div>
-</div>
-
-<div id="wrapper">
-
-    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
-        <div id="header" class="nav-collapse">
-            <div class="row clearfix">
-                <div class="col-1">
-
-                    <aside>
-                        <ul class="social-icons">
-                            <li>
-                                <a class="login-button" href="/pages/login.html">
-                                    <i class="fa fa-sign-in"></i><span>Login</span>
-                                </a>
-                            </li>
-                        </ul>
-
-                    </aside>
-
-                    <nav id="main-nav">
-                        <ul>
-                            <li><a href="/index.html">Home</a></li>
-                            <li><a href="/pages/exhibition.html">Exhibition</a></li>
-                            <li><a href="#contact">Gallery</a></li>
-                            <li><a href="#about">Awards</a></li>
-                            <li><a href="#about">Patron</a></li>
-                            <li><a href="#about">Press & Media</a></li>
-                            <li><a href="#about">Testimonials</a></li>
-                            <li><a href="#about">About Me</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+const Template = () => {
+  return (
+    <div>
+      <head>
+        <meta charSet="UTF-8" />
+        <title>Impressionist</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <link rel="shortcut icon" href="/images/site-logo.svg" title="Favicon" />
+        <link rel="stylesheet" href="/css/studio_style.css" />
+        <link rel="stylesheet" href="/css/artist-color.css" />
+        <link rel="stylesheet" href="/css/font-awesome.min.css" />
+        <link href="/css/animate.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+      </head>
+      <body>
+        <div id="preloader">
+          <div id="status" className="la-ball-triangle-path">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
-    </header>
 
-    <footer>
-        <div class="tc">
-            <!-- Authenticity Guarantee-Privacy Policy-Disclaimer-Terms and Conditions-Ordering and Buying-Cancellation and Refund Policy-Site Map -->
-            <nav id="footer_list">
+        <div className="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+          <div className="top-border wow fadeInDown animated"></div>
+          <div className="right-border wow fadeInRight animated"></div>
+          <div className="bottom-border wow fadeInUp animated"></div>
+          <div className="left-border wow fadeInLeft animated"></div>
+        </div>
+
+        <div id="wrapper">
+          <header id="banner" className="scrollto clearfix" data-enllax-ratio=".5">
+            <div id="header" className="nav-collapse">
+              <div className="row clearfix">
+                <div className="col-1">
+                  <aside>
+                    <ul className="social-icons">
+                      <li>
+                        <a className="login-button" href="/pages/login.html">
+                          <i className="fa fa-sign-in"></i><span>Login</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </aside>
+                  <nav id="main-nav">
+                    <ul>
+                      <li><a href="/index.html">Home</a></li>
+                      <li><a href="/pages/exhibition.html">Exhibition</a></li>
+                      <li><a href="#contact">Gallery</a></li>
+                      <li><a href="#about">Awards</a></li>
+                      <li><a href="#about">Patron</a></li>
+                      <li><a href="#about">Press & Media</a></li>
+                      <li><a href="#about">Testimonials</a></li>
+                      <li><a href="#about">About Me</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <footer>
+            <div className="tc">
+              <nav id="footer_list">
                 <ul>
-                    <li><a href="/footer/1ag.html">Authenticity Guarantee</a></li>
-                    <li><a href="/footer/2pp.html">Privacy Policy</a></li>
-                    <li><a href="/footer/3d.html">Disclaimer</a></li>
-                    <li><a href="/footer/4tcs.html">Terms and Conditions</a></li>
-                    <li><a href="/footer/5ob.html">Ordering and Buying</a></li>
-                    <li><a href="/footer/6crp.html">Cancellation and Refund Policy</a></li>
-                    <li><a href="/footer/7sitemap.html">Site Map</a></li>
+                  <li><a href="/footer/1ag.html">Authenticity Guarantee</a></li>
+                  <li><a href="/footer/2pp.html">Privacy Policy</a></li>
+                  <li><a href="/footer/3d.html">Disclaimer</a></li>
+                  <li><a href="/footer/4tcs.html">Terms and Conditions</a></li>
+                  <li><a href="/footer/5ob.html">Ordering and Buying</a></li>
+                  <li><a href="/footer/6crp.html">Cancellation and Refund Policy</a></li>
+                  <li><a href="/footer/7sitemap.html">Site Map</a></li>
                 </ul>
-            </nav>
-        </div>
-        <div class="contact">
-            <div class="icon-image-container">
-                <div class="section">
-                    <nav id="footer_icon">
-                        <ul>
-                            <li><a href="https://www.instagram.com/impressionist20/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
-                            <li><a href="https://twitter.com/AbhangBalasahe2?s=08" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
-                            <li><a href="https://in.pinterest.com/impressionist14/" target="_blank"><i class="fa fa-pinterest fa-3x" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.youtube.com/channel/UCcYAVAlswXE6Bqw5abPi0YQ" target="_blank"><i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a></li>
-                            <li><a href="https://www.facebook.com/balasaheb.abhang/" target="_blank"><i class="fa fa-facebook fa-3x" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus fa-3x" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </nav>
-                </div>
-                
-                <div class="section">
-                    <div class="image-container">
-                        <img src="/footer/images/footer-image-1.jpg" alt="Nag Foundation" class="patron-logo">
-                        <img src="/footer/images/footer-image-2.png" alt="Forbes Marshall" class="patron-logo">
-                        <img src="/footer/images/footer-image-3.png" alt="Forbes Marshall" class="patron-logo">
-                        <!-- <img src="talicon.png" alt="Talicon" class="patron-logo"> -->
-                    </div>
-                </div>
+              </nav>
             </div>
+            <div className="contact">
+              <div className="icon-image-container">
+                <div className="section">
+                  <nav id="footer_icon">
+                    <ul>
+                      <li><a href="https://www.instagram.com/impressionist20/" target="_blank"><i className="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
+                      <li><a href="https://twitter.com/AbhangBalasahe2?s=08" target="_blank"><i className="fa fa-twitter fa-3x" aria-hidden="true"></i></a></li>
+                      <li><a href="https://in.pinterest.com/impressionist14/" target="_blank"><i className="fa fa-pinterest fa-3x" aria-hidden="true"></i></a></li>
+                      <li><a href="https://www.youtube.com/channel/UCcYAVAlswXE6Bqw5abPi0YQ" target="_blank"><i className="fa fa-youtube fa-3x" aria-hidden="true"></i></a></li>
+                      <li><a href="https://www.facebook.com/balasaheb.abhang/" target="_blank"><i className="fa fa-facebook fa-3x" aria-hidden="true"></i></a></li>
+                      <li><a href="#"><i className="fa fa-google-plus fa-3x" aria-hidden="true"></i></a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div className="section">
+                  <div className="image-container">
+                    <img src="/footer/images/footer-image-1.jpg" alt="Nag Foundation" className="patron-logo" />
+                    <img src="/footer/images/footer-image-2.png" alt="Forbes Marshall" className="patron-logo" />
+                    <img src="/footer/images/footer-image-3.png" alt="Forbes Marshall" className="patron-logo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="copyright">
+              Copyright © Impressionist - 2006
+            </div>
+          </footer>
         </div>
-              
-        <div class="copyright">
-            Copyright © Impressionist - 2006
-        </div>
-    </footer>
-</div>
-    <script src="/js/jquery.1.8.3.min.js"></script>
-    <script src="/js/site.js"></script> 
-    <script src="/js/imagescrolling.js"></script>
-</body>
-</html>
+        <script src="/js/jquery.1.8.3.min.js"></script>
+        <script src="/js/site.js"></script>
+        <script src="/js/imagescrolling.js"></script>
+      </body>
+    </div>
+  );
+};
+
+export default Template;

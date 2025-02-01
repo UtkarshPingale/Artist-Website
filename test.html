@@ -1,186 +1,189 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Impressionist</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
-    <link rel="shortcut icon" href="/images/site-logo.svg" title="Favicon"/>
-    <link rel="stylesheet" href="/css/studio_style.css">
-    <link rel="stylesheet" href="/css/artist-color.css">
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/test.css">
-    <link href="/css/animate.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+import React from 'react';
+import './test.css';
 
-</head>
-<body>
-
-<!-- Preloader -->
-<div id="preloader">
-    <div id="status" class="la-ball-triangle-path">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</div>
-<!-- End of Preloader -->
-
-<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
-    <div class="top-border wow fadeInDown animated"></div>
-    <div class="right-border wow fadeInRight animated"></div>
-    <div class="bottom-border wow fadeInUp animated"></div>
-    <div class="left-border wow fadeInLeft animated"></div>
-</div>
-
-<div id="wrapper">
-
-    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
-        <div id="header" class="nav-collapse">
-            <div class="row clearfix">
-                <div class="col-1">
-
-                    <aside>
-                        <ul class="social-icons">
-                            <li>
-                                <a class="login-button" href="/pages/login.html">
-                                    <i class="fa fa-sign-in"></i><span>Login</span>
-                                </a>
-                            </li>
-                        </ul>
-
-                    </aside>
-
-                    <nav id="main-nav">
-                        <ul>
-                            <li><a href="/index.html">Home</a></li>
-                            <li><a href="/pages/exhibition.html">Exhibition</a></li>
-                            <li><a href="#contact">Gallery</a></li>
-                            <li><a href="#about">Awards</a></li>
-                            <li><a href="#about">Patron</a></li>
-                            <li><a href="#about">Press & Media</a></li>
-                            <li><a href="#about">Testimonials</a></li>
-                            <li><a href="#about">About Me</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+const Test = () => {
+  return (
+    <div>
+      <head>
+        <meta charSet="UTF-8" />
+        <title>Impressionist</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <link rel="shortcut icon" href="/images/site-logo.svg" title="Favicon" />
+        <link rel="stylesheet" href="/css/studio_style.css" />
+        <link rel="stylesheet" href="/css/artist-color.css" />
+        <link rel="stylesheet" href="/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="/test.css" />
+        <link href="/css/animate.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+      </head>
+      <body>
+        <div id="preloader">
+          <div id="status" className="la-ball-triangle-path">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
         </div>
-    </header>
 
-    <footer class="footer">
-        <div class="container">
-          <div class="footer_inner">
-            <div class="c-footer">
-              <div class="layout">
-                <div class="layout_item w-50">
-                  <div class="newsletter">
-                    <h3 class="newsletter_title">Get updates on fun stuff you probably want to know about in your inbox.</h3>
+        <div className="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+          <div className="top-border wow fadeInDown animated"></div>
+          <div className="right-border wow fadeInRight animated"></div>
+          <div className="bottom-border wow fadeInUp animated"></div>
+          <div className="left-border wow fadeInLeft animated"></div>
+        </div>
+
+        <div id="wrapper">
+          <header id="banner" className="scrollto clearfix" data-enllax-ratio=".5">
+            <div id="header" className="nav-collapse">
+              <div className="row clearfix">
+                <div className="col-1">
+                  <aside>
+                    <ul className="social-icons">
+                      <li>
+                        <a className="login-button" href="/pages/login.html">
+                          <i className="fa fa-sign-in"></i><span>Login</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </aside>
+                  <nav id="main-nav">
+                    <ul>
+                      <li><a href="/index.html">Home</a></li>
+                      <li><a href="/pages/exhibition.html">Exhibition</a></li>
+                      <li><a href="#contact">Gallery</a></li>
+                      <li><a href="#about">Awards</a></li>
+                      <li><a href="#about">Patron</a></li>
+                      <li><a href="#about">Press & Media</a></li>
+                      <li><a href="#about">Testimonials</a></li>
+                      <li><a href="#about">About Me</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <footer className="footer">
+            <div className="container">
+              <div className="footer_inner">
+                <div className="c-footer">
+                  <div className="layout">
+                    <div className="layout_item w-50">
+                      <div className="newsletter">
+                        <h3 className="newsletter_title">
+                          "Where Creativity Comes to Life,  And Art Speaks to the Soul."
+                        </h3>
+                      </div>
+                    </div>
+                    <div className="layout_item w-25">
+                      <nav className="c-nav-tool">
+                        <h2 className="c-nav-tool_title">Menu</h2>
+                        <ul className="c-nav-tool_list">
+                          <li><a href="/collections/all" className="c-link">Home</a></li>
+                          <li><a href="/pages/about-us" className="c-link">Exhibitions</a></li>
+                          <li><a href="/blogs/community" className="c-link">Gallery</a></li>
+                          <li><a href="#" className="c-link">Videos</a></li>
+                          <li><a href="#" className="c-link">Contact Us</a></li>
+                          <li><a href="#" className="c-link">About Me</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div className="layout_item w-25">
+                      <nav className="c-nav-tool">
+                        <h2 className="c-nav-tool_title">Support</h2>
+                        <ul className="c-nav-tool_list">
+                          <li><a href="/footer/1ag.html" className="c-link">Authenticity Guarantee</a></li>
+                          <li><a href="/footer/2pp.html" className="c-link">Privacy Policy</a></li>
+                          <li><a href="/footer/3d.html" className="c-link">Disclaimer</a></li>
+                          <li><a href="/footer/4tcs.html" className="c-link">Terms &amp; Conditions</a></li>
+                          <li><a href="/footer/5ob.html" className="c-link">Ordering and Buying</a></li>
+                          <li><a href="/footer/6crp.html" className="c-link">Cancellation and Refund Policy</a></li>
+                          <li><a href="/footer/7sitemap.html" className="c-link">Site Map</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <div className="layout_item w-25">
+                      <nav className="c-nav-tool">
+                        <h2 className="c-nav-tool_title">Press & Media</h2>
+                        <ul className="c-nav-tool_list">
+                          <li><a href="/footer/1ag.html" className="c-link">News & Press-Media</a></li>
+                          <li><a href="/footer/2pp.html" className="c-link">Participation</a></li>
+                          <li><a href="/footer/3d.html" className="c-link">Workshops</a></li>
+                          <li><a href="/footer/4tcs.html" className="c-link">Camps</a></li>
+                          <li><a href="#" className="c-link">Awards</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                  <div className="layout c-2">
+                    <div className="layout_item w-50">
+                      <ul className="flex">
+                        <li>
+                          <a target="_blank" href="https://www.facebook.com/balasaheb.abhang/">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z" />
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a target="_blank" href="https://x.com/AbhangBalasahe2?s=08">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z" />
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a target="_blank" href="https://www.instagram.com/impressionist20/">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <svg width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path d="M3.064 7.51A9.996 9.996 0 0 1 12 2c2.695 0 4.959.99 6.69 2.605l-2.867 2.868C14.786 6.482 13.468 5.977 12 5.977c-2.605 0-4.81 1.76-5.595 4.123-.2.6-.314 1.24-.314 1.9 0 .66.114 1.3.314 1.9.786 2.364 2.99 4.123 5.595 4.123 1.345 0 2.49-.355 3.386-.955a4.6 4.6 0 0 0 1.996-3.018H12v-3.868h9.418c.118.654.182 1.336.182 2.045 0 3.046-1.09 5.61-2.982 7.35C16.964 21.105 14.7 22 12 22A9.996 9.996 0 0 1 2 12c0-1.614.386-3.14 1.064-4.49z" />
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a target="_blank" href="https://in.pinterest.com/impressionist14/">
+                            <svg width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path d="M13.37 2.094A10.003 10.003 0 0 0 8.002 21.17a7.757 7.757 0 0 1 .163-2.293c.185-.839 1.296-5.463 1.296-5.463a3.739 3.739 0 0 1-.324-1.577c0-1.485.857-2.593 1.923-2.593a1.334 1.334 0 0 1 1.342 1.508c0 .9-.578 2.262-.88 3.54a1.544 1.544 0 0 0 1.575 1.923c1.898 0 3.17-2.431 3.17-5.301 0-2.2-1.457-3.848-4.143-3.848a4.746 4.746 0 0 0-4.93 4.794 2.96 2.96 0 0 0 .648 1.97.48.48 0 0 1 .162.554c-.046.184-.162.623-.208.784a.354.354 0 0 1-.51.254c-1.384-.554-2.036-2.077-2.036-3.816 0-2.847 2.384-6.255 7.154-6.255 3.796 0 6.32 2.777 6.32 5.747 0 3.909-2.177 6.848-5.394 6.848a2.861 2.861 0 0 1-2.454-1.246s-.578 2.316-.692 2.754a8.026 8.026 0 0 1-1.019 2.131c.923.28 1.882.42 2.846.416a9.988 9.988 0 0 0 9.996-10.003 10.002 10.002 0 0 0-8.635-9.903z" />
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a target="_blank" href="https://www.youtube.com/channel/UCcYAVAlswXE6Bqw5abPi0YQ">
+                            <svg width="36" height="36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path fill="none" d="M0 0h24v24H0z" />
+                              <path d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z" />
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-      
-                <div class="layout_item w-25">
-                  <nav class="c-nav-tool">
-                    <h4 class="c-nav-tool_title">Menu</h4>
-                    <ul class="c-nav-tool_list">
-                      <li>
-                        <a href="/collections/all" class="c-link">Shop All</a>
-                      </li>
-      
-                      <li>
-                        <a href="/pages/about-us" class="c-link">About Us</a>
-                      </li>
-      
-                      <li>
-                        <a href="/blogs/community" class="c-link">Community</a>
-                      </li>
-                      <li>
-                        <a href="#" class="c-link">Vibes</a>
-                      </li>
-                    </ul>
-                  </nav>
-      
-                </div>
-      
-                <div class="layout_item w-25">
-                  <nav class="c-nav-tool">
-                    <h4 class="c-nav-tool_title">Support</h4>
-                    <ul class="c-nav-tool_list">
-      
-                      <li class="c-nav-tool_item">
-                        <a href="/pages/shipping-returns" class="c-link">Shipping &amp; Returns</a>
-                      </li>
-      
-                      <li class="c-nav-tool_item">
-                        <a href="/pages/help" class="c-link">Help &amp; FAQ</a>
-                      </li>
-      
-                      <li class="c-nav-tool_item">
-                        <a href="/pages/terms-conditions" class="c-link">Terms &amp; Conditions</a>
-                      </li>
-      
-                      <li class="c-nav-tool_item">
-                        <a href="/pages/privacy-policy" class="c-link">Privacy Policy</a>
-                      </li>
-      
-                      <li class="c-nav-tool_item">
-                        <a href="/pages/contact" class="c-link">Contact</a>
-                      </li>
-      
-                      <li class="c-nav-tool_item">
-                        <a href="/account/login" class="c-link">Login</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
               </div>
-              <div class="layout c-2">
-                <div class="layout_item w-50">
-                  <ul class="flex">
-                    <li>
-                        <a href="#">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-                            <path fill="none" d="M0 0h24v24H0z" />
-                            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z" />
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-                            <path fill="none" d="M0 0h24v24H0z" />
-                            <path d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z" />
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-                            <path fill="none" d="M0 0h24v24H0z" />
-                            <path d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z" />
-                          </svg>
-                        </a>
-                      </li>
-                  </ul>
-                </div>
-                <div class="layout_item w-25" style="display:flex;justify-content: end;align-items: center; margin-left: 400px;">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36">
-                    <path fill="none" d="M0 0h24v24H0z" />
-                    <path d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm1 10h3l-4-4-4 4h3v4h2v-4z" />
-                  </svg>
-                </div>
+              <div className="footer_copyright">
+                <p>&copy; Copyright © Impressionist - 2006</p>
               </div>
             </div>
-          </div>
-          <div class="footer_copyright">
-            <p>&copy; 2022 The Afterlogo Company Inc.</p>
-          </div>
+          </footer>
         </div>
-      </footer>
-    
-</div>
-    <script src="/js/jquery.1.8.3.min.js"></script>
-    <script src="/js/site.js"></script> 
-    <script src="/js/imagescrolling.js"></script>
-</body>
-</html>
+        <script src="/js/jquery.1.8.3.min.js"></script>
+        <script src="/js/site.js"></script>
+        <script src="/js/imagescrolling.js"></script>
+      </body>
+    </div>
+  );
+};
+
+export default Test;
